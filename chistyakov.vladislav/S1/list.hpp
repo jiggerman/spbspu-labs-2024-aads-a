@@ -224,11 +224,10 @@ namespace chistyakov
         {
           tmp.push_back(value);
         }
-
         swap(tmp);
       }
 
-      void swap(List & list)
+      void swap(List & list) noexcept
       {
         std::swap(list.head_, head_);
         std::swap(list.tail_, tail_);
